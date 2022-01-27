@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Barlow", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.desktopView {
+  display: none;
+}
+
+#mainSection {
+  min-height: 100vh;
+  margin: 0px auto;
+}
+
+/* Mobile Layout */
+
+@media screen and (min-width: 400px) {
+  /* Header */
+
+  body {
+    max-width: 1200px;
+  }
+
+  .intro {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+  }
+}
