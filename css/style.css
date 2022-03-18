@@ -1,36 +1,162 @@
 * {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
+  max-width: 900px;
 }
 
 body {
-  height: 100%;
-  margin: 0;
   font-family: "Barlow", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.desktopView {
-  display: none;
-}
-
-#mainSection {
-  min-height: 100vh;
-  margin: 0px auto;
 }
 
 /* Mobile Layout */
 
-@media screen and (min-width: 400px) {
-  /* Header */
+/* Header */
 
-  body {
-    max-width: 1200px;
-  }
+header {
+  position: relative;
+  text-align: center;
+  max-width: 900px;
+}
 
-  .intro {
-    width: 100%;
-    height: auto;
-    max-width: 400px;
+header .headerButtons ul {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  overflow: auto;
+  list-style-type: none;
+}
+
+header .headerButtons li {
+  width: 25%;
+  float: left;
+  background-color: #ee6c4d;
+  border-style: none;
+  font-size: 3vw;
+  color: white;
+  font-family: "Barlow", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header .headerButtons.headerButtons a {
+  text-decoration: none;
+  color: white;
+}
+
+header .headerlinks {
+  color: #ee6c4d;
+  font-size: 40px;
+  display: flex;
+}
+
+header .introtext {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  align-items: center;
+  color: white;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
+  width: 87%;
+  height: auto;
+}
+
+header .introtext h1 {
+  font-weight: 600;
+  font-size: 8vw;
+  padding: 0px;
+}
+
+header .introtext h2 {
+  font-size: 5vw;
+  padding: 0.5em 0em 1em;
+  font-weight: 800;
+}
+
+header .introtext form button {
+  background-color: #ee6c4d;
+  border: none;
+  color: white;
+  font-family: "Barlow", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+  font-size: 3vw;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#headerimage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: bottom;
+  /* height: auto;
+  width: 100%; */
+}
+
+main {
+  margin: 0px;
+}
+
+@media screen and (min-width: 900px) {
+  header .introtext h1 {
+    font-size: 72px;
   }
+  header .introtext h2 {
+    font-size: 45px;
+  }
+  header .introtext form button {
+    font-size: 27px;
+  }
+  header .headerButtons li {
+    font-size: 27px;
+  }
+}
+.intro {
+}
+
+/* Form in Footer */
+
+#contactForm {
+  margin: auto;
+  width: 400px;
+  background-color: rgb(243, 243, 243);
+  border-radius: 6px;
+  margin: 30px 0px;
+  padding: 25px;
+}
+
+input[type="Submit"] {
+  background-color: #1ac0f3;
+  padding: 14px 20px;
+  cursor: pointer;
+  color: white;
+}
+
+input[type="Submit"]:hover {
+  background-color: royalblue;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="submit"],
+textarea {
+  width: 100%;
+  padding: 10px 16px;
+  margin: 8px 0px;
+  border-radius: 5px;
+  border-color: white;
+  border-style: hidden;
+}
+
+h1 {
+  padding-bottom: 25px;
+  margin-top: 0px;
+  font-weight: normal;
+}
+
+label {
+  color: grey;
+  font-weight: normal;
 }
