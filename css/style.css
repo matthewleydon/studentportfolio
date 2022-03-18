@@ -2,7 +2,7 @@
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
-  max-width: 900px;
+  /* max-width: 900px; */
 }
 
 body {
@@ -30,16 +30,29 @@ header .headerButtons ul {
 header .headerButtons li {
   width: 25%;
   float: left;
-  background-color: #ee6c4d;
   border-style: none;
-  font-size: 3vw;
-  color: white;
+  font-size: 4vw;
   font-family: "Barlow", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px 20px;
 }
 
 header .headerButtons.headerButtons a {
   text-decoration: none;
-  color: white;
+  color: #ee6c4d;
+}
+
+header .rowButtonsColumn {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  font-size: 4vw;
+}
+
+header .rowButtons {
+  content: "";
+  display: table;
+  clear: both;
+  width: 900px;
 }
 
 header .headerlinks {
@@ -50,7 +63,7 @@ header .headerlinks {
 
 header .introtext {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
