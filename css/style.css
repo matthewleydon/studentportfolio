@@ -30,40 +30,22 @@ header .headerButtons ul {
 header .headerButtons li {
   width: 25%;
   float: left;
-  border-style: none;
-  font-size: 4vw;
   font-family: "Barlow", Tahoma, Geneva, Verdana, sans-serif;
-  padding: 20px 20px;
+  padding: 0px;
 }
 
 header .headerButtons.headerButtons a {
   text-decoration: none;
   color: #ee6c4d;
+  font-size: 5vw;
 }
 
-header .rowButtonsColumn {
-  float: left;
-  width: 25%;
-  padding: 10px;
-  font-size: 4vw;
-}
-
-header .rowButtons {
-  content: "";
-  display: table;
-  clear: both;
-  width: 900px;
-}
-
-header .headerlinks {
-  color: #ee6c4d;
-  font-size: 40px;
-  display: flex;
+#linkedin :hover {
 }
 
 header .introtext {
   position: absolute;
-  top: 40%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -122,8 +104,8 @@ main {
   header .introtext form button {
     font-size: 27px;
   }
-  header .headerButtons li {
-    font-size: 27px;
+  header .headerButtons.headerButtons a {
+    font-size: 45px;
   }
 }
 .intro {
